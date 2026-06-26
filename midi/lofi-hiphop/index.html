@@ -19,9 +19,11 @@
   h1 { font-size:clamp(28px,6vw,48px); line-height:1.2; margin-bottom:8px; color:#fff; }
   .subtitle { font-size:13px; color:#a028d0; letter-spacing:.1em; margin-bottom:32px; }
   .desc { font-size:16px; line-height:1.8; color:#c8c8d8; margin-bottom:40px; border-left:3px solid #a028d0; padding-left:16px; }
-  .dl-btn { display:block; background:linear-gradient(135deg,#a028d0,#500090); color:#fff; text-align:center; padding:20px; border-radius:8px; font-size:20px; font-weight:bold; text-decoration:none; margin-bottom:12px; transition:opacity .2s; }
+  .dl-btn { display:flex; flex-direction:column; gap:4px; background:linear-gradient(135deg,#a028d0,#500090); color:#fff; padding:16px 20px; border-radius:8px; text-decoration:none; margin-bottom:10px; transition:opacity .2s; }
   .dl-btn:hover { opacity:.85; }
-  .dl-note { font-size:12px; color:#888; text-align:center; margin-bottom:48px; }
+  .dl-label { font-size:18px; font-weight:bold; }
+  .dl-desc { font-size:12px; opacity:.8; }
+  .dl-note { font-size:12px; color:#888; text-align:center; margin-bottom:48px; margin-top:4px; }
   .section-title { font-size:13px; color:#a028d0; letter-spacing:.15em; margin-bottom:16px; padding-bottom:8px; border-bottom:1px solid #2a1a3a; }
   .gear-list { list-style:none; display:flex; flex-direction:column; gap:12px; margin-bottom:48px; }
   .gear-list li a { display:flex; align-items:center; gap:12px; background:#14101e; border:1px solid #2a1a3a; border-radius:6px; padding:14px 16px; text-decoration:none; color:#e6e6f0; font-size:14px; transition:border-color .2s; }
@@ -37,7 +39,23 @@
   <h1>Lo-fi<br>4コード -Rainy Afternoon-</h1>
   <p class="subtitle">FREE MIDI CHORD PROGRESSION</p>
   <p class="desc">Lo-fiビートに乗せるだけでエモくなるmaj7進行。<br>チルな曲を作りたいDTMerへ。商用利用OK。</p>
-  <a class="dl-btn" href="../../assets/lofi-hiphop.mid" download>▼ 無料でダウンロード</a>
+  
+  <a class="dl-btn" href="../../assets/lofi-hiphop_plain.mid" download>
+    <span class="dl-label">▼ ベタうち</span>
+    <span class="dl-desc">ブロックコード / ボイスリーディング済み</span>
+  </a>
+  <a class="dl-btn" href="../../assets/lofi-hiphop_bass.mid" download>
+    <span class="dl-label">▼ ベース入り</span>
+    <span class="dl-desc">コード + ベースライン（2トラック）</span>
+  </a>
+  <a class="dl-btn" href="../../assets/lofi-hiphop_accent.mid" download>
+    <span class="dl-label">▼ アクセント入り</span>
+    <span class="dl-desc">強弱・タイミングにゆらぎを付加</span>
+  </a>
+  <a class="dl-btn" href="../../assets/lofi-hiphop_arp.mid" download>
+    <span class="dl-label">▼ アルペジオ</span>
+    <span class="dl-desc">分散和音（上昇アルペジオ）</span>
+  </a>
   <p class="dl-note">※ MIDIファイル / 商用利用OK / クレジット不要</p>
   
   <footer>© PeakyRabbit / 無料MIDI配布所</footer>
